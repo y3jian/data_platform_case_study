@@ -1,5 +1,4 @@
 import pandas as pd
-import duckdb
 from io import StringIO
 
 # By: Yolanda Jian
