@@ -17,3 +17,14 @@ for i in range (1, len(data_frame)):
 # Convert to integer column 
 data_frame['FlightCodes'] = data_frame['FlightCodes'].astype(int)
 print(data_frame)
+
+# 2. To_From column 
+# Split column
+# Split on '_' and expand to return as data frame
+split_cols = data_frame['To_From'].str.split('_', expand = True)
+# Assuming convert to capital case means WAterLoo -> WATERLOO
+split_cols = split_cols.applymap(lambda x: x.upper())
+
+data_frame[['From', 'To']] = split_cols
+
+print(data_frame)
