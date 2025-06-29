@@ -7,4 +7,4 @@ The table displays data of Airline Codes, Delay Times, Flight Codes, and to-from
 This project mimicks many of the problems faced in ETL pipelines. Data cleaning is a crucial step to show data consitencies and standardization.
 
 
-💻 Tech Stack: Pyhton, Pandas library
+💻 Tech Stack: Python, Pandas library
